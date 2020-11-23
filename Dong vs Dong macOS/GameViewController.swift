@@ -16,7 +16,6 @@ class GameViewController: NSViewController {
         
         let scene = GameScene.newGameScene()
         
-        // Present the scene
         let skView = self.view as! SKView
         skView.presentScene(scene)
         
@@ -24,6 +23,7 @@ class GameViewController: NSViewController {
         
         skView.showsFPS = true
         skView.showsNodeCount = true
+        skView.showsPhysics = true
     }
 
 }

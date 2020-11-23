@@ -2,7 +2,7 @@
 //  GameViewController.swift
 //  Dong vs Dong iOS
 //
-//  Created by Willem Leitso on 2020-11-21.
+//  Created by Willem Leitso on 2020-11-22.
 //
 
 import UIKit
@@ -15,12 +15,13 @@ class GameViewController: UIViewController {
         super.viewDidLoad()
         
         let scene = GameScene.newGameScene()
-
+        
         // Present the scene
         let skView = self.view as! SKView
         skView.presentScene(scene)
         
         skView.ignoresSiblingOrder = true
+        
         skView.showsFPS = true
         skView.showsNodeCount = true
     }
