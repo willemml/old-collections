@@ -7,49 +7,31 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		E60AE9D6256A3D2D005C567D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E60AE9D5256A3D2D005C567D /* AppDelegate.swift */; };
-		E60AE9D8256A3D2D005C567D /* GameViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E60AE9D7256A3D2D005C567D /* GameViewController.swift */; };
-		E60AE9DB256A3D2D005C567D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E60AE9D9256A3D2D005C567D /* Main.storyboard */; };
-		E60AE9E8256A3D2D005C567D /* GameScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = E60AE991256A3D2B005C567D /* GameScene.swift */; };
-		E60AE9EC256A3D2D005C567D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E60AE992256A3D2D005C567D /* Assets.xcassets */; };
 		E67A9AF3256B205C00DC1E6B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E67A9AF2256B205C00DC1E6B /* AppDelegate.swift */; };
 		E67A9AFB256B205C00DC1E6B /* GameViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E67A9AFA256B205C00DC1E6B /* GameViewController.swift */; };
-		E67A9B00256B205D00DC1E6B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E67A9AFF256B205D00DC1E6B /* Assets.xcassets */; };
 		E67A9B0B256B22B800DC1E6B /* GameScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = E60AE991256A3D2B005C567D /* GameScene.swift */; };
-		E6A7F5A2256B6A8E0016D971 /* Rod.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6A7F5A1256B6A8E0016D971 /* Rod.swift */; };
 		E6A7F5A7256B71880016D971 /* Rod.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6A7F5A1256B6A8E0016D971 /* Rod.swift */; };
-		E6A7F5AD256B7DB00016D971 /* DongDong.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6A7F5AC256B7DB00016D971 /* DongDong.swift */; };
 		E6A7F5AE256B7DB00016D971 /* DongDong.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6A7F5AC256B7DB00016D971 /* DongDong.swift */; };
 		E6A7F5C1256BAEBB0016D971 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E67A9AFC256B205C00DC1E6B /* Main.storyboard */; };
+		E6FE031D256C549000AFAAF9 /* Game.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6FE031B256C549000AFAAF9 /* Game.swift */; };
+		E6FE0326256C736D00AFAAF9 /* Button.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6FE0324256C736D00AFAAF9 /* Button.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		E60AE991256A3D2B005C567D /* GameScene.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameScene.swift; sourceTree = "<group>"; };
-		E60AE992256A3D2D005C567D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		E60AE9D3256A3D2D005C567D /* Dong vs Dong.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Dong vs Dong.app"; sourceTree = BUILT_PRODUCTS_DIR; };
-		E60AE9D5256A3D2D005C567D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		E60AE9D7256A3D2D005C567D /* GameViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameViewController.swift; sourceTree = "<group>"; };
-		E60AE9DA256A3D2D005C567D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		E60AE9DC256A3D2D005C567D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		E60AE9DD256A3D2D005C567D /* Dong_vs_Dong_macOS.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Dong_vs_Dong_macOS.entitlements; sourceTree = "<group>"; };
-		E67A9AF0256B205C00DC1E6B /* Dong vs Dong iOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Dong vs Dong iOS.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		E60AE992256A3D2D005C567D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Assets.xcassets; path = "../Dong vs Dong Shared/Assets.xcassets"; sourceTree = "<group>"; };
+		E67A9AF0256B205C00DC1E6B /* Dong vs Dong.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Dong vs Dong.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		E67A9AF2256B205C00DC1E6B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		E67A9AFA256B205C00DC1E6B /* GameViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameViewController.swift; sourceTree = "<group>"; };
 		E67A9AFD256B205C00DC1E6B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		E67A9AFF256B205D00DC1E6B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		E67A9B01256B205D00DC1E6B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		E6A7F5A1256B6A8E0016D971 /* Rod.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Rod.swift; sourceTree = "<group>"; };
 		E6A7F5AC256B7DB00016D971 /* DongDong.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DongDong.swift; sourceTree = "<group>"; };
+		E6FE031B256C549000AFAAF9 /* Game.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Game.swift; sourceTree = "<group>"; };
+		E6FE0324256C736D00AFAAF9 /* Button.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Button.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		E60AE9D0256A3D2D005C567D /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 		E67A9AED256B205C00DC1E6B /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -63,80 +45,42 @@
 		E60AE989256A3D2B005C567D = {
 			isa = PBXGroup;
 			children = (
-				E60AE98E256A3D2B005C567D /* Dong vs Dong Shared */,
-				E60AE9D4256A3D2D005C567D /* Dong vs Dong macOS */,
-				E67A9AF1256B205C00DC1E6B /* Dong vs Dong iOS */,
+				E67A9AF1256B205C00DC1E6B /* Dong vs Dong */,
 				E60AE998256A3D2D005C567D /* Products */,
 			);
-			sourceTree = "<group>";
-		};
-		E60AE98E256A3D2B005C567D /* Dong vs Dong Shared */ = {
-			isa = PBXGroup;
-			children = (
-				E60AE991256A3D2B005C567D /* GameScene.swift */,
-				E6A7F5A1256B6A8E0016D971 /* Rod.swift */,
-				E6A7F5AC256B7DB00016D971 /* DongDong.swift */,
-				E60AE992256A3D2D005C567D /* Assets.xcassets */,
-			);
-			path = "Dong vs Dong Shared";
 			sourceTree = "<group>";
 		};
 		E60AE998256A3D2D005C567D /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				E60AE9D3256A3D2D005C567D /* Dong vs Dong.app */,
-				E67A9AF0256B205C00DC1E6B /* Dong vs Dong iOS.app */,
+				E67A9AF0256B205C00DC1E6B /* Dong vs Dong.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		E60AE9D4256A3D2D005C567D /* Dong vs Dong macOS */ = {
+		E67A9AF1256B205C00DC1E6B /* Dong vs Dong */ = {
 			isa = PBXGroup;
 			children = (
-				E60AE9D5256A3D2D005C567D /* AppDelegate.swift */,
-				E60AE9D7256A3D2D005C567D /* GameViewController.swift */,
-				E60AE9D9256A3D2D005C567D /* Main.storyboard */,
-				E60AE9DC256A3D2D005C567D /* Info.plist */,
-				E60AE9DD256A3D2D005C567D /* Dong_vs_Dong_macOS.entitlements */,
-			);
-			path = "Dong vs Dong macOS";
-			sourceTree = "<group>";
-		};
-		E67A9AF1256B205C00DC1E6B /* Dong vs Dong iOS */ = {
-			isa = PBXGroup;
-			children = (
+				E60AE991256A3D2B005C567D /* GameScene.swift */,
+				E6FE031B256C549000AFAAF9 /* Game.swift */,
+				E6FE0324256C736D00AFAAF9 /* Button.swift */,
+				E6A7F5A1256B6A8E0016D971 /* Rod.swift */,
+				E6A7F5AC256B7DB00016D971 /* DongDong.swift */,
+				E60AE992256A3D2D005C567D /* Assets.xcassets */,
 				E67A9AF2256B205C00DC1E6B /* AppDelegate.swift */,
 				E67A9AFA256B205C00DC1E6B /* GameViewController.swift */,
 				E67A9AFC256B205C00DC1E6B /* Main.storyboard */,
-				E67A9AFF256B205D00DC1E6B /* Assets.xcassets */,
 				E67A9B01256B205D00DC1E6B /* Info.plist */,
 			);
-			path = "Dong vs Dong iOS";
+			path = "Dong vs Dong";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		E60AE9D2256A3D2D005C567D /* Dong vs Dong macOS */ = {
+		E67A9AEF256B205C00DC1E6B /* Dong vs Dong */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = E60AE9FD256A3D2D005C567D /* Build configuration list for PBXNativeTarget "Dong vs Dong macOS" */;
-			buildPhases = (
-				E60AE9CF256A3D2D005C567D /* Sources */,
-				E60AE9D0256A3D2D005C567D /* Frameworks */,
-				E60AE9D1256A3D2D005C567D /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-			);
-			name = "Dong vs Dong macOS";
-			productName = "Dong vs Dong macOS";
-			productReference = E60AE9D3256A3D2D005C567D /* Dong vs Dong.app */;
-			productType = "com.apple.product-type.application";
-		};
-		E67A9AEF256B205C00DC1E6B /* Dong vs Dong iOS */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = E67A9B02256B205D00DC1E6B /* Build configuration list for PBXNativeTarget "Dong vs Dong iOS" */;
+			buildConfigurationList = E67A9B02256B205D00DC1E6B /* Build configuration list for PBXNativeTarget "Dong vs Dong" */;
 			buildPhases = (
 				E67A9AEC256B205C00DC1E6B /* Sources */,
 				E67A9AED256B205C00DC1E6B /* Frameworks */,
@@ -146,9 +90,9 @@
 			);
 			dependencies = (
 			);
-			name = "Dong vs Dong iOS";
+			name = "Dong vs Dong";
 			productName = "Dong vs Dong iOS";
-			productReference = E67A9AF0256B205C00DC1E6B /* Dong vs Dong iOS.app */;
+			productReference = E67A9AF0256B205C00DC1E6B /* Dong vs Dong.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -158,11 +102,8 @@
 			isa = PBXProject;
 			attributes = {
 				LastSwiftUpdateCheck = 1220;
-				LastUpgradeCheck = 1200;
+				LastUpgradeCheck = 1220;
 				TargetAttributes = {
-					E60AE9D2256A3D2D005C567D = {
-						CreatedOnToolsVersion = 12.0;
-					};
 					E67A9AEF256B205C00DC1E6B = {
 						CreatedOnToolsVersion = 12.2;
 					};
@@ -181,51 +122,30 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				E60AE9D2256A3D2D005C567D /* Dong vs Dong macOS */,
-				E67A9AEF256B205C00DC1E6B /* Dong vs Dong iOS */,
+				E67A9AEF256B205C00DC1E6B /* Dong vs Dong */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
-		E60AE9D1256A3D2D005C567D /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				E60AE9DB256A3D2D005C567D /* Main.storyboard in Resources */,
-				E60AE9EC256A3D2D005C567D /* Assets.xcassets in Resources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 		E67A9AEE256B205C00DC1E6B /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 				E6A7F5C1256BAEBB0016D971 /* Main.storyboard in Resources */,
-				E67A9B00256B205D00DC1E6B /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
-		E60AE9CF256A3D2D005C567D /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				E60AE9E8256A3D2D005C567D /* GameScene.swift in Sources */,
-				E6A7F5A2256B6A8E0016D971 /* Rod.swift in Sources */,
-				E6A7F5AD256B7DB00016D971 /* DongDong.swift in Sources */,
-				E60AE9D8256A3D2D005C567D /* GameViewController.swift in Sources */,
-				E60AE9D6256A3D2D005C567D /* AppDelegate.swift in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 		E67A9AEC256B205C00DC1E6B /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E6FE0326256C736D00AFAAF9 /* Button.swift in Sources */,
 				E67A9B0B256B22B800DC1E6B /* GameScene.swift in Sources */,
+				E6FE031D256C549000AFAAF9 /* Game.swift in Sources */,
 				E6A7F5A7256B71880016D971 /* Rod.swift in Sources */,
 				E6A7F5AE256B7DB00016D971 /* DongDong.swift in Sources */,
 				E67A9AFB256B205C00DC1E6B /* GameViewController.swift in Sources */,
@@ -236,14 +156,6 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		E60AE9D9256A3D2D005C567D /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				E60AE9DA256A3D2D005C567D /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		E67A9AFC256B205C00DC1E6B /* Main.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -306,6 +218,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.2;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -359,52 +272,11 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.2;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SWIFT_COMPILATION_MODE = wholemodule;
 				SWIFT_OPTIMIZATION_LEVEL = "-O";
-			};
-			name = Release;
-		};
-		E60AE9FE256A3D2D005C567D /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
-				CODE_SIGN_ENTITLEMENTS = "Dong vs Dong macOS/Dong_vs_Dong_macOS.entitlements";
-				CODE_SIGN_STYLE = Automatic;
-				COMBINE_HIDPI_IMAGES = YES;
-				INFOPLIST_FILE = "Dong vs Dong macOS/Info.plist";
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/../Frameworks",
-				);
-				MACOSX_DEPLOYMENT_TARGET = 11.0;
-				PRODUCT_BUNDLE_IDENTIFIER = net.willemml.dongvsdong;
-				PRODUCT_NAME = "Dong vs Dong";
-				SDKROOT = macosx;
-				SWIFT_VERSION = 5.0;
-			};
-			name = Debug;
-		};
-		E60AE9FF256A3D2D005C567D /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
-				CODE_SIGN_ENTITLEMENTS = "Dong vs Dong macOS/Dong_vs_Dong_macOS.entitlements";
-				CODE_SIGN_STYLE = Automatic;
-				COMBINE_HIDPI_IMAGES = YES;
-				INFOPLIST_FILE = "Dong vs Dong macOS/Info.plist";
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/../Frameworks",
-				);
-				MACOSX_DEPLOYMENT_TARGET = 11.0;
-				PRODUCT_BUNDLE_IDENTIFIER = net.willemml.dongvsdong;
-				PRODUCT_NAME = "Dong vs Dong";
-				SDKROOT = macosx;
-				SWIFT_VERSION = 5.0;
 			};
 			name = Release;
 		};
@@ -415,7 +287,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 4AX3F7R9XQ;
-				INFOPLIST_FILE = "Dong vs Dong iOS/Info.plist";
+				INFOPLIST_FILE = "Dong vs Dong/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 14.2;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -436,7 +308,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 4AX3F7R9XQ;
-				INFOPLIST_FILE = "Dong vs Dong iOS/Info.plist";
+				INFOPLIST_FILE = "Dong vs Dong/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 14.2;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -463,16 +335,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		E60AE9FD256A3D2D005C567D /* Build configuration list for PBXNativeTarget "Dong vs Dong macOS" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				E60AE9FE256A3D2D005C567D /* Debug */,
-				E60AE9FF256A3D2D005C567D /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		E67A9B02256B205D00DC1E6B /* Build configuration list for PBXNativeTarget "Dong vs Dong iOS" */ = {
+		E67A9B02256B205D00DC1E6B /* Build configuration list for PBXNativeTarget "Dong vs Dong" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				E67A9B03256B205D00DC1E6B /* Debug */,

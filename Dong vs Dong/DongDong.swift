@@ -8,18 +8,16 @@
 import Foundation
 import SpriteKit
 
-class DongDong {
+class DongDong : Game {
     fileprivate let leftRod : Rod
     fileprivate let rightRod : Rod
-    fileprivate let scene : SKScene
     fileprivate let unit : CGFloat
     fileprivate let distanceRodWall : CGFloat
     fileprivate let walls : [SKShapeNode]
     fileprivate let blocks : [SKShapeNode]
     
     
-    public init(scene: SKScene) {
-        self.scene = scene
+    override public init(scene: SKScene) {
         let screenSize = UIScreen.main.bounds.size
         leftRod = Rod(color: .red, screenSize: screenSize, poke: PokeDirection.RIGHT, scene: scene)
         rightRod = Rod(color: .blue, screenSize: screenSize, poke: PokeDirection.LEFT, scene: scene)
@@ -41,6 +39,7 @@ class DongDong {
         ]
         leftRod.moveVertical()
         rightRod.moveVertical()
+        super.init(scene: scene)
     }
     
     class func createWall(x: CGFloat, y: CGFloat, width: CGFloat, height: CGFloat, scene: SKScene) -> SKShapeNode {
@@ -71,30 +70,24 @@ class DongDong {
     
     func atBlock(rod: Rod, side: Side) -> CGFloat {
         for block in blocks {
-            print(block.frame)
             if rod.rod.frame.minY > block.frame.minY && rod.rod.frame.minY + rod.rodHeight < block.frame.minY + unit * 2 {
                 let blockX = block.position.x - unit * 1.5
                 if side == Side.LEFT {
                     if blockX >= 0 {
-                        print("left 1")
                         return unit * 3.1
                     } else if blockX >= unit * -1.6 {
-                        print("left 2")
                         return unit * 1.6
                     }
                 } else {
                     if blockX <= unit * -2.9 {
-                        print("right 1")
                         return unit * 3.1
                     } else if blockX <= unit * -1.4 {
-                        print("left 2")
                         return unit * 1.6
                     }
                 }
-                return 0
             }
         }
-        return unit * -1.5
+        return 0
     }
     
     func poke(side: Side) {
@@ -106,11 +99,9 @@ class DongDong {
     }
 }
 
-
-
 #if os(iOS) || os(tvOS)
 extension DongDong {
-    func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
+    override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
         for touch in touches {
             if touch.location(in: scene).x < 0 {
                 poke(side: Side.LEFT)

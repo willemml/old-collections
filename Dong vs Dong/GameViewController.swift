@@ -10,7 +10,6 @@ import SpriteKit
 import GameplayKit
 
 class GameViewController: UIViewController {
-
     override func viewDidLoad() {
         super.viewDidLoad()
         
@@ -21,9 +20,6 @@ class GameViewController: UIViewController {
         skView.presentScene(scene)
         
         skView.ignoresSiblingOrder = true
-        
-        skView.showsFPS = true
-        skView.showsNodeCount = true
     }
 
     override var shouldAutorotate: Bool {
