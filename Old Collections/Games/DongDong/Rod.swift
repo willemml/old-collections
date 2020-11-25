@@ -9,14 +9,19 @@ import SpriteKit
 
 class Rod {
     fileprivate var movingVertical = false
-    fileprivate var movingHorizontal = false
-    fileprivate var direction = Direction.DOWN
+    public var movingHorizontal = false
+    fileprivate var direction : Direction
     fileprivate let screenHeight : CGFloat
     fileprivate let pokeDirection : PokeDirection
     public let rodHeight : CGFloat
     public let rod : SKShapeNode
     
     public init(color: SKColor, screenSize: CGSize, poke: PokeDirection, scene: SKScene) {
+        if Bool.random() {
+            direction = Direction.UP
+        } else {
+            direction = Direction.DOWN
+        }
         pokeDirection = poke
         screenHeight = screenSize.height * 2
         let width = screenSize.width / 2

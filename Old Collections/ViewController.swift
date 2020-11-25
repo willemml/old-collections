@@ -10,9 +10,8 @@ import SpriteKit
 import GameplayKit
 
 class ViewController: UIViewController {
-    @IBAction func goDong() {
-        let skView = self.view as! SKView
-        skView.presentScene(GameScene<DongDong>.newGameScene())
+    override func viewDidDisappear(_ animated: Bool) {
+        self.dismiss(animated: false, completion: nil)
     }
 
     override var shouldAutorotate: Bool {
@@ -29,5 +28,28 @@ class ViewController: UIViewController {
 
     override var prefersStatusBarHidden: Bool {
         return true
+    }
+}
+
+class GameView : SKView {
+    var gameScene: SKScene? = nil
+    
+    deinit {
+        leaveGame()
+        removeFromSuperview()
+    }
+    
+    @IBAction func leaveGame() {
+        gameScene = nil
+        scene?.removeAllActions()
+        scene?.removeAllChildren()
+        scene?.removeFromParent()
+        presentScene(nil)
+    }
+    
+    required init?(coder: NSCoder) {
+        gameScene = GameScene<DongDong>.newGameScene()
+        super.init(coder: coder)
+        presentScene(gameScene)
     }
 }

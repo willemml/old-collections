@@ -11,16 +11,16 @@
         <!--Old Collections Menu-->
         <scene sceneID="SOf-0b-dRk">
             <objects>
-                <viewController title="Old Collections Menu" id="Eb0-99-S3d" customClass="ViewController" customModule="Old_Collections" sceneMemberID="viewController">
+                <viewController title="Old Collections Menu" id="Eb0-99-S3d" customClass="ViewController" customModule="Old_Collections" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Jsp-4y-Z4J">
                         <rect key="frame" x="0.0" y="0.0" width="667" height="375"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7Gb-8S-QzO">
-                                <rect key="frame" x="283" y="172" width="101" height="31"/>
+                                <rect key="frame" x="283" y="172.5" width="101" height="30"/>
                                 <state key="normal" title="VS Dong Dong"/>
                                 <connections>
-                                    <action selector="goDong" destination="Eb0-99-S3d" eventType="touchUpInside" id="eO6-Vb-LZn"/>
+                                    <segue destination="7ub-SQ-LeD" kind="showDetail" id="6dQ-iT-Go5"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -29,16 +29,39 @@
                         <constraints>
                             <constraint firstItem="7Gb-8S-QzO" firstAttribute="centerX" secondItem="Jsp-4y-Z4J" secondAttribute="centerX" id="BrR-u9-4Kj"/>
                             <constraint firstItem="7Gb-8S-QzO" firstAttribute="centerY" secondItem="Jsp-4y-Z4J" secondAttribute="centerY" id="LEi-rE-rDs"/>
-                            <constraint firstItem="7Gb-8S-QzO" firstAttribute="top" secondItem="0Pm-Tw-uY5" secondAttribute="top" constant="172" id="WHm-r9-BlR"/>
                         </constraints>
                     </view>
-                    <connections>
-                        <outlet property="button" destination="7Gb-8S-QzO" id="OLH-bL-x1U"/>
-                    </connections>
+                    <navigationItem key="navigationItem" id="Jk4-78-fpr"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="cll-3s-YMG" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-519" y="-33"/>
+            <point key="canvasLocation" x="-560" y="-209"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="be6-0p-Urp">
+            <objects>
+                <viewController id="7ub-SQ-LeD" customClass="ViewController" customModule="Old_Collections" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="bR8-LE-Z2a" customClass="GameView" customModule="Old_Collections" customModuleProvider="target">
+                        <rect key="frame" x="0.0" y="0.0" width="667" height="375"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="close" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="k2l-Oa-GzZ">
+                                <rect key="frame" x="318" y="0.0" width="30" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <connections>
+                                    <action selector="leaveGame" destination="bR8-LE-Z2a" eventType="touchUpInside" id="rJQ-gn-Pgu"/>
+                                    <segue destination="Eb0-99-S3d" kind="showDetail" id="IG6-Zh-O98"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="ICf-yX-1wy"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="y0Q-xa-UZ4"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ldy-ao-EdH" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-561" y="630"/>
         </scene>
     </scenes>
     <resources>

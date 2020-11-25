@@ -14,6 +14,7 @@ class DongDong : Game {
     fileprivate let distanceRodWall : CGFloat
     fileprivate let walls : [SKShapeNode]
     fileprivate let blocks : [SKShapeNode]
+    fileprivate var winner : Side? = nil
     
     
     public required init(scene: SKScene) {
@@ -21,9 +22,7 @@ class DongDong : Game {
         leftRod = Rod(color: .red, screenSize: screenSize, poke: PokeDirection.RIGHT, scene: scene)
         rightRod = Rod(color: .blue, screenSize: screenSize, poke: PokeDirection.LEFT, scene: scene)
         unit = screenSize.height * 2 / 18
-        print(unit)
         distanceRodWall = abs(screenSize.width / 2 - 20 - unit * 1.5)
-        print(distanceRodWall)
         let centered = unit * -1.5
         walls = [
             DongDong.createWall(x: centered, y: -screenSize.height, width: unit * 3, height: unit * 6, scene: scene),
@@ -70,23 +69,29 @@ class DongDong : Game {
     func atBlock(rod: Rod, side: Side) -> CGFloat {
         for block in blocks {
             if rod.rod.frame.minY > block.frame.minY && rod.rod.frame.minY + rod.rodHeight < block.frame.minY + unit * 2 {
-                let blockX = block.position.x - unit * 1.5
-                if side == Side.LEFT {
-                    if blockX >= 0 {
-                        return unit * 3.1
-                    } else if blockX >= unit * -1.6 {
-                        return unit * 1.6
+                var blockX = (block.position.x / unit).rounded()
+                if side == Side.RIGHT {
+                    blockX = blockX * -1
+                }
+                let amount : Int
+                if blockX == -1 {
+                    amount = 0
+                } else if blockX == 0 {
+                    amount = 1
+                } else if blockX == 1 {
+                    amount = 2
+                } else if blockX == 2 {
+                    amount = 4
+                    if !rod.movingHorizontal {
+                        winner = side
                     }
                 } else {
-                    if blockX <= unit * -2.9 {
-                        return unit * 3.1
-                    } else if blockX <= unit * -1.4 {
-                        return unit * 1.6
-                    }
+                    amount = -1
                 }
+                return CGFloat(amount) * unit
             }
         }
-        return 0
+        return -1 * unit
     }
     
     func poke(side: Side) {
@@ -101,11 +106,13 @@ class DongDong : Game {
 #if os(iOS) || os(tvOS)
 extension DongDong {
     override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
-        for touch in touches {
-            if touch.location(in: scene).x < 0 {
-                poke(side: Side.LEFT)
-            } else {
-                poke(side: Side.RIGHT)
+        if winner == nil {
+            for touch in touches {
+                if touch.location(in: scene).x < 0 {
+                    poke(side: Side.LEFT)
+                } else {
+                    poke(side: Side.RIGHT)
+                }
             }
         }
     }
